@@ -1,0 +1,12 @@
+{
+  "domain": "koti",
+  "name": "Koti Homeassistant",
+  "version": "0.1.0",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": ["@禁锢在时空之中的灵魂"],
+  "config_flow": true,
+  "iot_class": "local_polling",
+  "documentation": "https://gitee.com/zhutingxf/KotiHomeassistant",
+  "issue_tracker": "https://gitee.com/zhutingxf/KotiHomeassistant/issues"
+}

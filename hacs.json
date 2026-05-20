@@ -1,0 +1,8 @@
+{
+  "name": "Koti Homeassistant",
+  "render_readme": true,
+  "domains": ["Koti"],
+  "homeassistant": "2024.1.0",
+  "iot_class": "local_polling",
+  "zip_release": false
+}
