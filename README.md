@@ -1,2 +1,2 @@
-## Koti(柯帝)智能家居接入HomeAssistant
+##Koti(柯帝)智能家居接入HomeAssistant
 
