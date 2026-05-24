@@ -1,0 +1,71 @@
+{
+  "progress": {
+    "discover_koti_gateway": "正在搜索 koti 网关..."
+  },  
+  "config": {
+    "abort": {
+      "already_configured": "该网关已被配置，无法重复添加",
+      "not_implemented": "此功能尚未实现",
+      "success": "koti网关信息获取成功（暂时未创建条目）",
+      "no_devices_found": "未发现任何 koti 网关，请检查网络后重试或手动添加。"
+    },
+    "error": {
+      "cannot_connect": "无法连接到koti网关，请检查 IP 地址和端口",
+      "unknown": "发生未知错误",
+      "invalid_ip_format": "IP 地址格式不正确，请输入有效的 IPv4 地址（例如 192.168.1.100）",
+      "fetch_failed": "获取koti网关信息失败，请检查koti网关地址或koti网关开启状态"
+    },
+    "step": {
+      "choose_method": {
+        "title": "配置koti网关",
+        "description": "您可以自动检测koti网关或者手动添加koti网关",
+        "data": {
+          "configuration_gateway_method": "配置方式"
+        }
+      },
+      "manual": {
+        "title": "手动指定koti网关地址",
+        "description": "请输入koti网关的 IP 地址",
+        "data": {
+          "host": "koti网关 IP 地址"
+        }
+      },
+      "final": {
+        "title": "网关信息确认",
+        "description": "成功获取koti网关信息：\n网关 ID: {gateway_id}\n名称: {name}\nUDP 接收端口: {udp_recv_port}\n设备数量: {device_count}\n\n点击提交完成添加。"
+      },
+      "auto_discover_progress": {
+        "title": "自动发现网关",
+        "description": "搜索中..."
+      },
+      "auto_discover_done": {
+        "title": "搜索结果",
+        "description": "发现 {count} 个网关",
+        "data": {
+          "device_index": "请选择设备:"
+        }
+      }
+    }
+  },
+  "selector": {
+    "configuration_gateway_method": {
+      "options": {
+        "auto": "自动发现网关",
+        "manual": "手动指定网关"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Koti 集成选项",
+        "description": "配置集成的运行参数",
+        "data": {
+          "host": "网关 IP 地址",
+          "target_port": "网关目标端口",
+          "local_port": "本地监听端口"
+        }
+      }
+    }
+  }
+}

@@ -1,12 +1,16 @@
 {
   "domain": "koti",
   "name": "Koti Homeassistant",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "requirements": [],
-  "dependencies": [],
+  "dependencies": ["ssdp"],
+  "ssdp": [
+    { "st": "urn:schemas-UPnP-org:device:SmartHomeCenterDevice:1\r\n" },
+    { "nt": ":schemas-UPnP-org:device:SmartHomeCenterDevice:1\r\n" }
+  ],
   "codeowners": ["@禁锢在时空之中的灵魂"],
   "config_flow": true,
   "iot_class": "local_polling",
-  "documentation": "https://gitee.com/zhutingxf/KotiHomeassistant",
-  "issue_tracker": "https://gitee.com/zhutingxf/KotiHomeassistant/issues"
+  "documentation": "https://github.com/zhutingxf/KotiHomeassistant",
+  "issue_tracker": "https://github.com/zhutingxf/KotiHomeassistant/issues"
 }

@@ -1,0 +1,71 @@
+{
+  "progress": {
+    "discover_koti_gateway": "Searching for koti gateway..."
+  },
+  "config": {
+    "abort": {
+      "already_configured": "Gateway already configured. Duplicate addition is not allowed.",
+      "not_implemented": "This feature is not implemented yet",
+      "success": "koti gateway info retrieved successfully (entry not created yet)",
+      "no_devices_found": "No koti gateway found. Please check your network or try manual setup."
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to koti gateway, please check IP address and port",
+      "unknown": "An unknown error occurred",
+      "invalid_ip_format": "Invalid IP address format. Please enter a valid IPv4 address (e.g., 192.168.1.100)",
+      "fetch_failed": "Failed to retrieve koti gateway info. Please check the gateway address or ensure the gateway is running"
+    },
+    "step": {
+      "choose_method": {
+        "title": "Configure koti Gateway",
+        "description": "You can automatically discover or manually add a koti gateway",
+        "data": {
+          "configuration_gateway_method": "Configuration method"
+        }
+      },
+      "manual": {
+        "title": "Manually specify koti gateway address",
+        "description": "Enter the IP address of your koti gateway",
+        "data": {
+          "host": "koti gateway IP address"
+        }
+      },
+      "final": {
+        "title": "Gateway Information Confirmation",
+        "description": "Successfully retrieved koti gateway info:\nGateway ID: {gateway_id}\nName: {name}\nUDP receive port: {udp_recv_port}\nNumber of devices: {device_count}\n\nClick submit to complete."
+      },
+      "auto_discover_progress": {
+        "title": "Auto Discovery",
+        "description": "Searching..."
+      },
+      "auto_discover_done": {
+        "title": "Search Result",
+        "description": "Found {count} gateways, please select",
+        "data": {
+          "device_index": "Select Device:"
+        }
+      }
+    }
+  },
+  "selector": {
+    "configuration_gateway_method": {
+      "options": {
+        "auto": "Auto discover gateway",
+        "manual": "Manually specify gateway"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Koti Integration Options",
+        "description": "Configure integration runtime parameters",
+        "data": {
+          "host": "Gateway IP address",
+          "target_port": "Gateway Port",
+          "local_port": "Local Port"
+        }
+      }
+    }
+  }
+}

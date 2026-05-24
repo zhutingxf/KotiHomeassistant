@@ -1,1 +1,6 @@
 DOMAIN = "koti"
+CONF_HOST = "host"
+CONF_TARGET_PORT = "target_port"
+CONF_LOCAL_PORT = "local_port"
+DEFAULT_TARGET_PORT = 6877
+DEFAULT_LOCAL_PORT =  6899
